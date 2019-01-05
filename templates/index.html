@@ -7,25 +7,25 @@
 
   <title></title>
   <style>
-  body {
-    font-family: monospace;
-    line-height: 1.5;
-    background-color: #000000;
-    padding: 20px;
-  }
-  button {
-    font-size: 14px;
-    background: #000000;
-    color: #7AC143;
-    border: none;
-    outline:none;
-    padding: 4px 8px;
-    letter-spacing: 1px;
-  }
-  button:hover {
-    background: #7AC143;
-    color: #130C0E;
-  }
+      body {
+        font-family: monospace;
+        line-height: 1.5;
+        background-color: #000000;
+        padding: 20px;
+      }
+      button {
+        font-size: 14px;
+        background: #130C0E;
+        color: #7AC143;
+        border: none;
+        outline:none;
+        padding: 4px 8px;
+        letter-spacing: 1px;
+      }
+      button:hover {
+        background: #7AC143;
+        color: #130C0E;
+      }
   </style>
 </head>
 
@@ -37,7 +37,7 @@
     <button onclick="document.getElementById('audioElement').volume+=0.1">Vol +</button>
     <button onclick="document.getElementById('audioElement').volume-=0.1">Vol -</button>
   </div>
-  <script src="https:///d3js.org/d3.v4.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
   <script>
   var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
