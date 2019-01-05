@@ -6,7 +6,7 @@
 <title>D3 v4 - Music viz</title>
 <style>
 html, body, #svg {
-  background-color: #130C0E;
+  background-color: #000000;
 }
 button {
   font-size: 14px;
@@ -25,7 +25,7 @@ button:hover {
 </head>
 
 <body>
-  <audio id="audioElement" src="{{ url_for('static', filename=sample1) }}" type="file/mpeg"></audio>
+  <audio id="audioElement" src="{{ url_for('static', filename='gg.mp3') }}"></audio>
   <div>
     <button onclick="document.getElementById('audioElement').play()">Play &#9658;</button>
     <button onclick="document.getElementById('audioElement').pause()">Pause ||</button>

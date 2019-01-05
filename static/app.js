@@ -5,6 +5,8 @@
 
     
     var audioElement = document.getElementById('audioElement');
+    audioElement.crossOrigin = "anonymous";
+
 
     var audioSrc = audioCtx.createMediaElementSource(audioElement);
     var analyser = audioCtx.createAnalyser();
