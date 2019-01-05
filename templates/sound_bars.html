@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<title>D3 v4 - Music viz</title>
+<title></title>
 <style>
 html, body, #svg {
   background-color: #000000;
@@ -41,14 +41,11 @@ button:hover {
   var audioSrc = audioCtx.createMediaElementSource(audioElement);
   var analyser = audioCtx.createAnalyser();
 
-  // bind analyser to the media element source.
   audioSrc.connect(analyser);
   audioSrc.connect(audioCtx.destination);
 
   var bufferSize = analyser.frequencyBinCount
-  //console.log(bufferSize);
-  
-  //var frequencyData = new Uint8Array(200);
+
   var frequencyData = new Uint8Array(bufferSize);
 
   analyser.getByteFrequencyData(frequencyData);
