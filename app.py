@@ -7,5 +7,10 @@ def home():
     return render_template("index.html")
 
 
+@app.route("/bar2")
+def fu():
+    return render_template("sound_bars.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
