@@ -40,8 +40,8 @@
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
   <script>
+  document.querySelector('button').addEventListener('click', function() { 
   var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-
 
   var audioElement = document.getElementById('audioElement');
   audioElement.crossOrigin = "anonymous";
@@ -99,6 +99,9 @@
   renderChart();
 
   d3.select(self.frameElement).style('height', '700px');
+
+  });
+
   </script> 
 </body>
 </html>

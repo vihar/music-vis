@@ -35,6 +35,9 @@ button:hover {
 
 <script src="https:///d3js.org/d3.v4.min.js"></script>
 <script>
+
+  document.querySelector('button').addEventListener('click', function() { 
+
   
   var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
   var audioElement = document.getElementById('audioElement');
@@ -86,6 +89,8 @@ button:hover {
   };
   
   drawChart();
+    });
+
 </script>
 </body>
 </html>
